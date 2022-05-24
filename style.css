@@ -1,14 +1,105 @@
+@font-face {
+    font-family: 'Raleway-Thin';
+    src: url(./File/Font/Raleway-Thin.ttf);
+}
+@font-face {
+    font-family: 'Raleway-ThinItalic';
+    src: url(./File/Font/Raleway-ThinItalic.ttf);
+}
+@font-face {
+    font-family: 'Raleway-ExtraLight';
+    src: url(./File/Font/Raleway-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'Raleway-ExtraLightItalic';
+    src: url(./File/Font/Raleway-ExtraLightItalic.ttf);
+}
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url(./File/Font/Raleway-Light.ttf);
+}
+@font-face {
+    font-family: 'Raleway-LightItalic';
+    src: url(./File/Font/Raleway-LightItalic.ttf);
+}
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url(./File/Font/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url(./File/Font/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: 'Raleway-MediumItalic';
+    src: url(./File/Font/Raleway-MediumItalic.ttf);
+}
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    src: url(./File/Font/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Raleway-SemiBoldItalic';
+    src: url(./File/Font/Raleway-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url(./File/Font/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: 'Raleway-BoldItalic';
+    src: url(./File/Font/Raleway-BoldItalic.ttf);
+}
+@font-face {
+    font-family: 'Raleway-ExtraBold';
+    src: url(./File/Font/Raleway-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Raleway-ExtraBoldItalic';
+    src: url(./File/Font/Raleway-ExtraBoldItalic.ttf);
+}
+@font-face {
+    font-family: 'Raleway-Black';
+    src: url(./File/Font/Raleway-Black.ttf);
+}
+@font-face {
+    font-family: 'Raleway-BlackItalic';
+    src: url(./File/Font/Raleway-BlackItalic.ttf);
+}
 * {
     margin: 0%;
     padding: 0%;
     text-decoration: none;
     box-sizing: border-box;
 }
+*::selection {
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 25, 40);
+}
+:root {
+    content: '';
+}
 #html {
+    font-size: 100%;
     scroll-behavior: smooth;
 }
 #body {
     scroll-behavior: contain;
     background-image: url(./File/Img/bg.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+}
+#body::-webkit-scrollbar {
+    width: 10px;
+}
+#body::-webkit-scrollbar-track {
+    background: rgb(15, 25, 40);
+}
+#body::-webkit-scrollbar-button {
+    background: rgb(50, 65, 90);
+}
+#body::-webkit-scrollbar-thumb {
+    background: rgb(50, 65, 90);
 }
