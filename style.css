@@ -76,20 +76,27 @@
     color: rgb(255, 255, 255);
     background-color: rgb(15, 25, 40);
 }
-:root {
-    content: '';
-}
+/* :root {
+    
+} */
 #html {
     font-size: 100%;
+    color: #fff;
+    font-family: 'Courier New';
     scroll-behavior: smooth;
 }
 #body {
+    width: 100vw;
+    height: 100vh;
     scroll-behavior: contain;
     background-image: url(./File/Img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 #body::-webkit-scrollbar {
     width: 10px;
@@ -102,4 +109,7 @@
 }
 #body::-webkit-scrollbar-thumb {
     background: rgb(50, 65, 90);
+}
+h1, span {
+    font-family: 'Raleway-BlackItalic';
 }
